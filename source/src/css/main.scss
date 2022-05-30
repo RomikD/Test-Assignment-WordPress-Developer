@@ -1,0 +1,111 @@
+/*!
+Theme Name: Kallisto
+Author: Roman Dudnyk
+Author URI: http://dudnyk.rb@gmail.com
+Version: 1.0.0
+*/
+
+/*!
+*
+* Description: This is the main style that is used in all languages. The /--- (Example text) ---/ allow you to navigate
+*              in file. Comments tells about the code where it used
+*
+*/
+
+/*Import normalizer reset file from npm package*/
+@import "node_modules/normalize-scss/sass/normalize";
+
+/*Importing font-styles from font.css for display the Roboto Condensed font*/
+@import 'modules/font';
+
+/*------------------ Default code --------------------*/
+
+@import "modules/reset";
+@import "modules/mainTitle";
+
+/*----------------- End Default code -----------------*/
+/*----------------------------------------------------*/
+/*------------------- Header code --------------------*/
+
+@import "modules/header";
+
+/*----------------- End Header code ------------------*/
+/*----------------------------------------------------*/
+/*------------------- Footer code --------------------*/
+
+@import "modules/footer";
+
+/*----------------- End Footer code ------------------*/
+/*----------------------------------------------------*/
+/*------------------ Homepage code -------------------*/
+
+@import "modules/archiveProducts";
+
+/*----------------- End Homepage code ----------------*/
+/*----------------------------------------------------*/
+/*----------------- Woocommerce code -----------------*/
+
+.woocommerce {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    width: 100%;
+    padding: 0 0 45px 0;
+}
+
+@import "modules/myAccount";
+
+/*--------------- End woocommerce code ---------------*/
+/*----------------------------------------------------*/
+/*--------------- Fixed elements code ----------------*/
+
+/*Captcha*/
+
+.grecaptcha-badge {
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+
+/*whatsapp*/
+
+/*colphone*/
+
+/*------------- End Fixed elements code --------------*/
+/*----------------------------------------------------*/
+/*-------------- Animate elements code ---------------*/
+
+/* animation rotate-vert-center */
+@-webkit-keyframes rotate-vert-center {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+@keyframes rotate-vert-center {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+/* animation typing effect */
+@keyframes type{
+    from{
+        box-shadow: inset 3px 0 0 #000000;
+    }
+    to{
+        box-shadow: inset 3px 0 0 transparent;
+    }
+}
+
+/*------------ End Animate elements code -------------*/
+/*----------------------------------------------------*/
